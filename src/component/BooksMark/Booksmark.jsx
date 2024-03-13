@@ -1,10 +1,10 @@
 
 import PropTypes from 'prop-types';
 
-const Booksmark = ({booksmark,titles}) => {
+const Booksmark = ({booksmark,titles,readingTime}) => {
     return (
         <div className='flex-1'>
-
+            <h1 className='text-2xl font-semibold text-[#6047EC] px-12 py-5 bg-[rgba(96,71,236,0.10)] mb-6 border border-[#6047EC] rounded-lg'>Spent time on read : {readingTime} </h1>
             <div className='p-8 bg-[rgba(17,17,17,0.05)] rounded-lg'>
                 <h1 className='text-2xl font-bold text-[#111]'>Bookmarked Blogs :{booksmark}</h1>
                     {
@@ -17,7 +17,8 @@ const Booksmark = ({booksmark,titles}) => {
 
 Booksmark.propTypes = {
     booksmark:PropTypes.number,
-    titles:PropTypes.string
+    titles:PropTypes.string,
+    readingTime:PropTypes.number.isRequired
 };
 
 export default Booksmark;

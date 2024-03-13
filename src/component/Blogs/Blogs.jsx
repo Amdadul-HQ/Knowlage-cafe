@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import Blog from '../Blog/Blog';
 
-const Blogs = ({handelAddBooksMark}) => {
+const Blogs = ({handelAddBooksMark,handelMarkAsRead}) => {
     const[blogs,setBlogs] = useState([])
 
     useEffect( () => {
@@ -18,7 +18,7 @@ const Blogs = ({handelAddBooksMark}) => {
     return (
         <div className='space-y-10'>
             {
-                blogs.map(blog => <Blog key={blog.id} handelAddBooksMark={handelAddBooksMark} blog={blog}></Blog>)
+                blogs.map(blog => <Blog key={blog.id} handelAddBooksMark={handelAddBooksMark} handelMarkAsRead={handelMarkAsRead} blog={blog}></Blog>)
             }
         </div>
     );
@@ -26,6 +26,7 @@ const Blogs = ({handelAddBooksMark}) => {
 
 Blogs.propTypes = {
     handelAddBooksMark:PropTypes.func.isRequired,
+    handelMarkAsRead:PropTypes.func.isRequired,
 };
 
 export default Blogs;
