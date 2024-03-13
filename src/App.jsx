@@ -1,11 +1,14 @@
 
 import './App.css'
+import Header from './component/header/Header'
+import Main from './component/main/Main'
 
 function App() {
 
   return (
     <>
-      <h1 className=''>Knoledge Cafe</h1>
+      <Header></Header>
+      <Main></Main>
     </>
   )
 }

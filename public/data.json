@@ -1,0 +1,43 @@
+[
+    {
+        "id":1,
+      "coverImg": "../src/assets/images/2.png",
+      "author_name": "TechWizard",
+      "author_img": "../src/assets/images/boy1.png",
+      "publish_date": "2024-03-13",
+      "reading_time": 10,
+      "title": "Revolutionizing Programming with Quantum Computing: A Beginner's Guide",
+      "has_tag": ["Quantum Computing", "Programming", "Beginner Guide"]
+    },
+    {
+        "id":2,
+      "coverImg": "../src/assets/images/1.jpg",
+      "author_name": "CodeNinjaX",
+      "author_img": "../src/assets/images/girl2.jpg",
+      "publish_date": "2024-03-14",
+      "reading_time": 8,
+      "title": "Unveiling the Secrets of AI in Programming: Myths and Realities",
+      "has_tag": ["AI", "Programming", "Myths", "Realities"]
+    },
+    {
+        "id":3,
+        "coverImg": "../src/assets/images/3.png",
+        "author_name": "ByteMaster",
+        "author_img": "../src/assets/images/girl1.jpg",
+        "publish_date": "2024-03-15",
+        "reading_time": 12,
+        "title": "The Art of Debugging: Mastering the Code Detective Skills",
+        "has_tag": ["Debugging", "Code Detective", "Skills"]
+    },
+    {
+        "id":4,
+        "coverImg": "../src/assets/images/4.jpg",
+        "author_name": "DevGeek",
+        "publish_date": "2024-03-16",
+        "author_img": "../src/assets/images/boy2.png",
+        "reading_time": 15,
+        "title": "Evolving Trends in Programming Paradigms: The Dawn of Functional Programming",
+        "has_tag": ["Programming Trends", "Functional Programming"]
+    }
+  ]
+  
