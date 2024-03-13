@@ -1,4 +1,4 @@
-import profile from '../../assets/images/profile.png'
+import profile from '../../../public/assets/images/profile.png'
 
 const Header = () => {
     return (
