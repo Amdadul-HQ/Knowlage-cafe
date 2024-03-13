@@ -30,7 +30,7 @@ const Blog = ({blog,handelAddBooksMark,handelMarkAsRead}) => {
               <p>#{has_tag[1]}</p>
               <p>#{has_tag[2]}</p>
           </div>
-          <button onClick={() => handelMarkAsRead(reading_time)} className='text-xl font-semibold text-[#6047EC] underline'>Mark As Read</button>
+          <button onClick={() => handelMarkAsRead(reading_time,title)} className='text-xl font-semibold text-[#6047EC] underline'>Mark As Read</button>
         </div>
     );
 };

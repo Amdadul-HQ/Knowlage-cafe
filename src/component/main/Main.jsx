@@ -16,14 +16,18 @@ const Main = () => {
             setTitles(newTitles)
         }
     }
-    const handelMarkAsRead = time => {
+    console.log(titles);
+    const handelMarkAsRead = (time,title) => {
         setReadingTime(readingTime + time);
+        const newTitles = titles.filter( heading => heading !==title)
+        setTitles(newTitles)
+
     }
 
     return (
         <main className='max-w-screen-xl mx-auto flex gap-x-6'>
             <Blogs handelAddBooksMark={handelAddBooksMark} handelMarkAsRead={handelMarkAsRead} ></Blogs>
-            <Booksmark booksmark={booksmark} readingTime={readingTime} titles={titles} ></Booksmark>
+            <Booksmark  readingTime={readingTime} titles={titles} ></Booksmark>
         </main>
     );
 };
